@@ -1,0 +1,22 @@
+@use 'variables';
+
+//PRESETS
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    
+    
+}
+
+body{
+   
+    overflow-x: hidden;
+    
+}

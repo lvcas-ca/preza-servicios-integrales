@@ -1,0 +1,236 @@
+@use 'presets';
+@use 'variables';
+
+
+header{
+    .logo-top-nav-mobile{
+        position: relative;
+        z-index: 4;
+        background-color: variables.$color-white;
+    }
+
+    .pre-nav-container{
+        .pre-nav{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 70px;
+            background-color: #112847;
+            float: right;
+            padding: variables.$margin-mobile;
+            position: relative;
+            z-index: 4;
+            .info, .redes{
+                display: none;    
+            } 
+       } 
+    }
+   
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 300px;
+        background-color: variables.$color-white;
+        float: left;
+        position: relative;
+        padding: variables.$margin-mobile;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        z-index: 3;
+
+        ul{
+            list-style: none;
+            padding: 0px;
+            li{
+                .drop-mobile{
+                    padding-left: 10px;
+                    p{
+                        margin-bottom: 4px;
+                        font-weight: 600;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: 15px;
+                                font-weight: 500;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                    
+                }
+                display: flex;
+                flex-direction: column;
+                a{
+                    font-family: variables.$font-montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 19px;
+                    color: #000000;
+                    text-decoration: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        color: variables.$color-blue-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-container{
+       display: none;
+    }
+
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+        background-color: #EAEFF5;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+        background-color: #EAEFF5;
+    }
+}
+
+@media (min-width: 900px) {
+    header{
+        .pre-nav-container{
+                .pre-nav{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                height: 50px;
+                background-color: variables.$color-white;
+                float: right;
+                padding: 0px 130px 0px 140px;
+                .redes{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    p{
+                        color: variables.$color-strong-blue;
+                        font-size: 20px;
+                        margin-bottom: 0px;
+                    }
+                    a{
+                        img{
+                            width: 25px;
+                        }
+                    }
+
+                }
+                .info{
+                    display: flex;
+                    color: variables.$color-white;
+                    font-size: 20px;
+                    img{
+                        height: 22px;
+                        width: 32px;
+                        padding-right: 10px;
+                        position: relative;
+                        top: 7px;
+                    
+                    }
+                    a{
+                        text-decoration: none;
+                        color: variables.$color-strong-blue;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            }  
+        }
+       
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            height: 78px;
+            background-color: variables.$color-strong-blue;
+            padding: 10px 110px 0px 140px;
+            z-index: 4;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    .dropdown{
+                        .btn-drop{
+                            color: variables.$color-white;
+                        }
+                    }
+                    a{
+                        color: variables.$color-white;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
+           
+
+           
+        }
+
+        .logo-container{
+          display: flex;
+          position: absolute;
+          top: -11px;
+          padding: 0px 140px 0px 140px;
+          width: 100px;
+          background-color: transparent;
+          z-index: 10;
+            a{
+               
+                img{
+                    width: 191px;
+                    position: relative;
+                    z-index: 30;
+                    right: 141px;
+                    top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1130px) {
+    header{
+        .pre-nav-container{
+           .pre-nav{
+            padding: 0px 140px 0px 140px;
+           }  
+        }
+       
+        .logo-container{
+            background-color: variables.$color-white;
+            a{
+                img{
+                    position: relative;
+                    right: -17px;
+                    top: 0px;
+                    width: 191px;
+                }
+            }
+        } 
+        
+        nav{
+          
+            ul{
+                li{
+                    a{
+                        color: variables.$color-white;
+                        font-size: 15px;
+                    }
+                }
+            }
+           
+
+           
+        }
+    }
+}

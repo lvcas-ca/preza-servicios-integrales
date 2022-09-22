@@ -1,0 +1,721 @@
+@use 'presets';
+@use 'variables';
+
+//SERVICIOS/////////////////////////////////////////////////////////////////////////////////
+main{
+    padding-top: 250px;
+ }
+ .card-servicios-container{
+     text-align: center;
+     margin: variables.$margin-mobile;
+     p{
+         font-family: variables.$font-montserrat;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
+         /* blue-light */
+         color: variables.$color-blue-light;
+     }
+     h1{
+         font-family: variables.$font-montserrat;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 39px;
+         color: #000000;
+         padding-bottom: 50px;
+     }
+ 
+     .cards-container{
+     max-width: 1052px;
+     margin: 0 auto;
+     display: grid;
+     gap: 0px;
+     .card{
+         margin: 0 auto;
+         width: 240px;
+         height: 348px;
+         margin-bottom: 20px;
+         background-color: variables.$color-strong-blue;
+         padding: 20px 15px 20px 15px;
+         span{
+             color: variables.$color-white;
+             font-size: 15px;
+             font-weight: 700;
+             text-align: center;
+             padding-top: 20px;
+         }
+ 
+         p{
+             font-family: 'Montserrat';
+             font-style: normal;
+             font-weight: 400;
+             font-size: 15px;
+             line-height: 20px;
+             color: variables.$color-white;
+             padding-top: 15px;
+         }
+ 
+         button{
+             padding-top: 25px;
+             background-color: transparent;
+             border: none;
+             a{
+                 color: variables.$color-orange;
+                 text-decoration: none;
+                 font-size: 15px;
+                 &:hover{
+                   color: variables.$color-blue-light;
+                 }
+             }
+         }
+ 
+         .btn-gas, .btn-mantenimiento{
+             padding-top: 5px;
+         }
+ 
+         .btn-camaras{
+             position: relative;
+             top: -40px;
+         }
+     }
+ }
+ 
+ }
+ //FIN SERVICIOS/////////////////////////////////////////////////////////////////////////////////
+ 
+ //EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+ .emergencias-container{
+     .barra-separadora-container{
+         
+         margin-top: 100px;
+         width: 100%;
+         height: 210px;
+         background-color: variables.$color-orange;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         p{
+             font-family: variables.$font-montserrat;
+             font-style: normal;
+             font-weight: 500;
+             font-size: 20px;
+             line-height: 24px;
+             color: variables.$color-white;
+         }
+ 
+         h1{
+             font-family: 'Montserrat';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 20px;
+             line-height: 39px;
+             display: flex;
+             align-items: center;
+             text-align: center;
+ 
+             color: variables.$color-white
+         }
+     }  
+     .card-emergencia-container{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+                 filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+         
+         .card-roja{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             gap: 30px;
+             text-align: center;
+             padding: 20px;
+             width: 100%;
+             height: 400px;
+             background-color: variables.$color-red;
+             p{
+                 font-family: 'Montserrat';
+                 font-style: normal;
+                 font-weight: 500;
+                 font-size: 20px;
+                 line-height: 24px;
+                 display: flex;
+                 align-items: center;
+                 color: variables.$color-white;
+             }
+             .llamar-container{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: row;
+                 width: 300px;
+                 .llamar{
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   width: 150px;
+                   height: 70px;
+                   background-color: variables.$color-strong-blue;
+                   border-radius: 10px;
+                   a{
+                     text-decoration: none;
+                     font-family: 'Montserrat';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 15px;
+                     line-height: 24px;
+                     display: flex;
+                     align-items: center;
+                     color: variables.$color-white;
+                     img{
+                        display: none;
+                     }
+                   }
+                 }
+                 .ring-principal{
+                     width: 80px;
+                     height: 80px;
+                     background-color: variables.$color-red;
+                     position: absolute;
+                     border-radius: 60%;
+                 }
+                 .pulse{
+                     width: 50px;
+                     height: 50px;
+                     border-radius: 50%;
+                     background-color: #EAEFF5;
+                     margin-left: -4px;
+                     
+                     .ring{
+                         position: absolute;
+                         background-color: inherit;
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 100%;
+                         opacity: 0.8;
+                         -webkit-animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
+                                 animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
+                     }
+ 
+                   
+ 
+                     .ring:nth-child(2){
+                         -webkit-animation-delay: -1s;
+                                 animation-delay: -1s;
+                     }
+                     .ring:nth-child(3){
+                         -webkit-animation-delay: -2s;
+                                 animation-delay: -2s;
+                     }
+                     .ring:nth-child(4){
+                         -webkit-animation-delay: -3s;
+                                 animation-delay: -3s;
+                     }
+                 }
+                 .ws{
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     border-radius: 10px;
+                     width: 150px;
+                     height: 70px;
+                     background-color: variables.$color-verde-ws;
+                     a{
+                         text-decoration: none;
+                         font-family: 'Montserrat';
+                         font-style: normal;
+                         font-weight: 700;
+                         font-size: 15px;
+                         line-height: 24px;
+                         display: flex;
+                         align-items: center;
+                         color: variables.$color-white;
+                         img{
+                             display: none;
+                         }
+                     }
+ 
+                 }
+             }
+         }
+         .card-con-imagen{
+             width: 100%;
+             height: 450px;
+             background-color: variables.$color-strong-blue;
+             background-image: url("/img-web/remodelar-casa-min.png");
+             background-size: cover;
+             padding: 50px 20px 50px 20px;
+             ul{
+                 list-style-type: none;
+                 padding-left: 0px;
+                 li{
+                     padding-top: 15px;
+                     font-family: 'Montserrat';
+                     font-style: normal;
+                     font-weight: 500;
+                     font-size: 15px;
+                     line-height: 24px;
+                     /* identical to box height */
+                     display: flex;
+                     align-items: center;
+                     color: variables.$color-white;
+                     img{
+                         padding-right: 10px;
+                         
+                     }
+                 }
+             
+             }
+             p{
+                 font-family: 'Montserrat';
+                 font-style: normal;
+                 font-weight: 700;
+                 font-size: 15px;
+                 line-height: 20px;
+                 color: #FFFFFF;
+             }
+             .btn-abonar-consulta{
+                 font-family: 'Montserrat';
+                 font-style: normal;
+                 font-weight: 700;
+                 font-size: 10px;
+                 line-height: 12px;
+                 color: #EAEFF5;
+                 img{
+                     padding-right: 5px;
+                 }
+             }
+             .img-mp-container{
+                 padding-top: 15px;
+             }
+ 
+         }
+ 
+     }
+ }
+ //FIN EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+ 
+ //QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+ .quienes-somos-container{
+     
+     background-image: url("/img-web/planificacion.jpg");
+     width: 100%;
+     background-size: cover;
+     background-position-y: -160px;
+     .barra-separadora-container-azul{
+         padding: 150px 20px 150px 20px;
+         margin-top: 100px;
+         width: 100%;
+         height: 550px;
+         background-color: #112847e1;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-direction: column;
+     
+     } 
+     p{
+         font-family: variables.$font-montserrat;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
+         color: variables.$color-white;
+     }
+ 
+     h1{
+         font-family: 'Montserrat';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 39px;
+         display: flex;
+         align-items: center;
+         text-align: center;
+ 
+         color: variables.$color-white
+     }
+ 
+     .texto-ofrecemos{
+         padding: variables.$margin-mobile;
+         .parrafo-ofrecemos{
+             color: #000000;
+             padding-top: 25px;
+         }
+     }
+ }
+ //FIN QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+ 
+ //CONTACTO///////////////////////////////////////////////////////////////////////////////////
+ .contacto-container{
+     
+     .barra-separadora-container-azul{
+         padding: variables.$margin-mobile;
+         margin-top: 100px;
+         width: 100%;
+         height: 210px;
+         background-color: variables.$color-strong-blue;
+         display: flex;
+         justify-content: center;
+         align-items: left;
+         flex-direction: column;
+         gap: 10px;
+         p{
+             font-family: variables.$font-montserrat;
+             font-style: normal;
+             font-weight: 500;
+             font-size: 20px;
+             line-height: 24px;
+             color: variables.$color-white;
+         }
+     
+         span{
+             font-family: 'Montserrat';
+             font-style: normal;
+             font-weight: 600;
+             font-size: 20px;
+             line-height: 20px;
+             text-align: left;
+             color: variables.$color-white
+         }
+     }
+ 
+     .formulario-container{
+         background: url("/img-web/mapa-1.PNG");
+         background-size: cover;
+        
+ 
+ 
+         
+     .form-style{
+ 
+         padding: 10px!important;
+        
+         #mi-row{
+              .form-style-container{
+                 background-color: variables.$color-blue-light!important;
+                 padding: 20px;
+                 width: 100%;
+             }
+         }
+     }
+ 
+     }
+ 
+     .boton-enviar{
+         width: 41%;
+         background-color: variables.$color-orange;
+     }
+ 
+ 
+     
+ }
+
+ .redes-contacto{
+    display: flex;
+    gap: 10px;
+    a{
+        padding-top: 5px;
+        img{
+            
+            width: 26px;
+        }
+    }
+ }
+ //FIN CONTACTO///////////////////////////////////////////////////////////////////////////////////
+ 
+ //TESTIMONIOS///////////////////////////////////////////////////////////////////////////////////
+ .testimonios-container{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    height: 100%;
+    width: 100%;
+    background-image: url("/img-web/footer-bckg.jpg");
+    background-size: auto;
+   
+    
+
+    h1{
+        color: variables.$color-white;
+        padding: 20px;
+        font-family: variables.$font-montserrat;
+        font-weight: bold;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        .swiper-sliden{
+            background-color: variables.$color-white;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid variables.$color-strong-blue;
+            gap: 10px;
+            border-radius: 1px;
+            padding: 30px;
+            img{
+                border: 2px solid #112847;
+                border-radius: 50%;
+            }
+            p{
+                text-align: center;
+                
+                font-family: variables.$font-montserrat;
+            }
+            .text-final-card{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+
+    }
+ }
+// FIN TESTIMONIOS///////////////////////////////////////////////////////////////////////////////////
+
+ //GRACIAS///////////////////////////////////////////////////////////////////////////////////////////
+ .gracias-container{
+     width: 100%;
+     height: 100vh;
+     background-color: #112847;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: variables.$color-white;
+     padding: variables.$margin-mobile;
+     h1{
+         font-family: variables.$font-montserrat;
+         font-style: normal;
+         font-weight: 800;
+         font-size: 44px;
+         line-height: 58px;
+         text-align: center;
+         color: #FFFFFF;
+     }
+     p{
+         font-family: variables.$font-montserrat;
+         font-style: normal;
+         font-weight: 800;
+         font-size: 20px;
+         line-height: 39px;
+         /* identical to box height */
+         text-align: center;
+         color: #FFFFFF;
+     }
+ }
+ //FIN GRACIAS///////////////////////////////////////////////////////////////////////////////////
+
+ @media (min-width: 600px) {
+    
+    .emergencias-container{
+        .card-emergencia-container {
+         .card-roja .llamar-container{
+             .pulse {
+            
+             margin-left: -2px;
+           }
+         }
+        }
+    }  
+
+     //SERVICIOS/////////////////////////////////////////////////////////////////////////////////
+     .cards-container { grid-template-columns: repeat(2, 1fr); }
+     //FIN SERVICIOS/////////////////////////////////////////////////////////////////////////////////
+     
+     //EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+     .emergencias-container{
+         .card-emergencia-container{
+             .card-roja{
+                 .llamar-container{
+                     width: 500px;
+                     .llamar,.ws{
+                         width: 250px;
+                         a{
+                             font-size: 15px;
+                             img{
+                                 display: block;
+                                 padding-right: 12px;
+                             }
+                         }
+                     }
+                     
+                 }
+             }
+ 
+         }
+ 
+     }
+     //FIN EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+ }
+
+ @media (min-width: 900px) {
+    
+        //QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+        .quienes-somos-container{
+            .barra-separadora-container-azul{
+                h1{
+                    font-size: 32px;
+                }
+            }
+            .texto-ofrecemos{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .parrafo-ofrecemos {
+                    position: relative;
+                    border-radius: 5px;
+                    top: -40px;
+                    width: 600px;
+                    padding: 15px;
+                    background-color: variables.$color-white;
+                    color: #000000;
+                    padding-top: 25px;
+                    -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+                            filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+                }
+            } 
+        } 
+        //FIN QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+ }
+
+ @media (min-width: 1054px) {
+
+    main{
+        padding-top: 300px;
+    }
+
+    .card-servicios-container{
+        h1{
+            font-size: 32px;
+        }
+         .cards-container { 
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+        }
+    }
+
+    .card:nth-child(5){
+        grid-column-start: 2;
+    }
+
+      //EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+      .emergencias-container{
+        .barra-separadora-container{
+            h1{
+                font-size: 32px;
+            }
+        }
+       .card-emergencia-container{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            top: -30px;
+
+            .card-roja{
+                width: 600px;
+                height: 400px;
+                border-radius: 10px 0px 0px 10px;
+                .llamar-container{
+                    .llamar,.ws{
+                        a{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                
+            }
+            .card-con-imagen{
+                width: 600px;
+                height: 500px;
+                padding: 50px;
+                ul{
+                    li{
+                        font-size: 20px;
+                        padding-bottom: 15px;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    padding-top: 10px;
+                }
+                button{
+                    margin-top: 15px;
+                }
+               
+            }
+        } 
+     }
+    //FIN EMERGENCIA////////////////////////////////////////////////////////////////////////////////
+
+    //QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+    .quienes-somos-container{
+        
+        .barra-separadora-container-azul{
+            padding: variables.$margin-desktop;
+            p{
+                width: 800px;
+            }
+    
+        }
+    }
+    //FIN QUIENESOMOS////////////////////////////////////////////////////////////////////////////////
+    
+    //CONTACTO////////////////////////////////////////////////////////////////////////////////
+    .contacto-container{
+         .barra-separadora-container-azul{
+           padding: variables.$margin-desktop;
+        }
+
+        .formulario-container{
+            background-size: cover;
+            .form-style{
+            padding-top: 100px;
+            padding-bottom: 100px;
+                #mi-row{
+                    .form-style-container{
+                        background-color: variables.$color-blue-light!important;
+                        padding: 30px 40px 50px 30px;
+                        width: 40%;
+                    }
+                }
+            }
+
+        }
+
+        input, .form-select{
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    //FIN CONTACTO////////////////////////////////////////////////////////////////////////////////
+
+     //GRACIAS CONTAINER////////////////////////////////////////////////////////////////////////////////
+    .gracias-container{
+        h1{
+            font-size: 50px;
+            padding-bottom: 20px;
+            line-height: 70px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+    }
+    //FIN GRACIAS CONTAINER////////////////////////////////////////////////////////////////////////////////
+ }
