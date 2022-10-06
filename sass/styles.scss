@@ -12,6 +12,17 @@
     background-size: cover;
 }
 
+.banner-container{
+  display: none;
+}
+
+.banner-container-mobile{
+  display: block;
+  img{
+    width: 100%;
+  }
+}
+
 //FONTS
 .block{
     display: block!important;
@@ -445,6 +456,21 @@
 
 
 @media (min-width: 900px) {
+    //GIFS
+    .banner-container{
+        display: block;
+        text-align: center;
+        padding: 20px;
+        img{
+          width: 80%;
+        }
+      
+    }
+
+    .banner-container-mobile{
+       display: none;
+    }
+
 
     .logo-top-nav-mobile{
         display: none;
