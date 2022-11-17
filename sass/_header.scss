@@ -127,20 +127,20 @@ header{
                 .info{
                     display: flex;
                     color: variables.$color-white;
-                    font-size: 20px;
+                    font-size: 15px;
                     img{
                         height: 22px;
                         width: 32px;
                         padding-right: 10px;
                         position: relative;
-                        top: 7px;
+                        top: 0px;
                     
                     }
                     a{
                         text-decoration: none;
                         color: variables.$color-strong-blue;
                         font-weight: 400;
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
             }  

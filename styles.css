@@ -110,7 +110,7 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
   }
   header .pre-nav-container .pre-nav .redes p {
     color: #112847;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 0px;
   }
   header .pre-nav-container .pre-nav .redes a img {
@@ -126,13 +126,12 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
     width: 32px;
     padding-right: 10px;
     position: relative;
-    top: 7px;
   }
   header .pre-nav-container .pre-nav .info a {
     text-decoration: none;
     color: #112847;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
   }
   header nav {
     display: flex;

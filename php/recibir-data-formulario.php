@@ -54,7 +54,7 @@
     //Expresiones regulares
     //$soloNumeros = "/[0-9]/";
 
-    if($nombre == ""){
+    if($nombre == ''){
         $respuesta += ['nombre' => 'Ingrese su nombre'];
         $bandera= false;
     }
@@ -79,8 +79,8 @@
 			$mail->isSMTP();                                            // Set mailer to use SMTP
 			$mail->Host       = 'mail.prezaserviciosintegrales.com';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-			$mail->Username   = '_mainaccount@prezaserviciosintegrales.com';                     // SMTP username
-			$mail->Password   = 'z0O**A89x2SWeq';                               // SMTP password
+			$mail->Username   = 'mail@prezaserviciosintegrales.com';                     // SMTP username
+			$mail->Password   = 'B+x(7o&Cn1s_';                               // SMTP password
 			$mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
 			$mail->Port       = 465;
             // TCP port to connect to
@@ -89,11 +89,12 @@
             //$mail->addAddress('asesorprepagassalud@gmail.com', 'Maxi');
             //$mail->addCC('stormbringer.lu@gmail.com');
     
-            $mail->setFrom('lucas_.caceres@hotmail.com.ar', 'PREZA SERVICIOS INTEGRALES');
-            $mail->addAddress('lucas_.caceres@hotmail.com.ar', '');
-            $mail->addCC('lucas_.caceres@hotmail.com.ar');
+            $mail->setFrom($email);
+            $mail->addAddress('mail@prezaserviciosintegrales.com', '');
+            $mail->addCC('preza.este@gmail.com');
+            $mail->addCC('stormbringer.lu@gmail.com');
 			// Content
-			$mail->Subject = 'Nuevo contacto';
+			$mail->Subject = 'Consulta desde sitio web PREZA';
 			$mail->isHTML(true);                                  // Set email format to HTML
 			$mail->Body    = correo($nombre,$email,$servicios,$mensaje);
 			$mail->CharSet = 'UTF-8';
