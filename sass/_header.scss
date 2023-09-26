@@ -32,7 +32,6 @@ header{
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        height: 300px;
         background-color: variables.$color-white;
         float: left;
         position: relative;
@@ -102,10 +101,10 @@ header{
                 align-items: center;
                 gap: 20px;
                 width: 100%;
-                height: 50px;
-                background-color: variables.$color-white;
+                height: 140px;
+                background-color: variables.$background-color-gray;
                 float: right;
-                padding: 0px 130px 0px 140px;
+                justify-content: space-between;
                 .redes{
                     display: flex;
                     flex-direction: row;
@@ -128,20 +127,41 @@ header{
                     display: flex;
                     color: variables.$color-white;
                     font-size: 15px;
-                    img{
-                        height: 22px;
-                        width: 32px;
-                        padding-right: 10px;
-                        position: relative;
-                        top: 0px;
+                    align-items: center;
+                    gap: 10px;
+                    .img-container{
+                        background-color:variables.$color-white;
+                        padding: 15px;
+                        border-radius: 50%;
+                        img{
+                            height: 25px;
+                            width: 25px;
+                            position: relative;
+                            top: 0px;
+                        }
+                    }
+
+                    .text-container-info{
+                        display: flex;
+                        flex-direction: column;
+                        span{
+                            color: #74787C;
+                            font-family: variables.$font-Roboto;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 17px; /* 121.429% */
+                        }
+                        a{
+                            text-decoration: none;
+                            color: variables.$color-strong-blue;
+                            font-weight: 400;
+                            font-size: 15px;
+                            font-family: variables.$font-montserrat;
+                        }
+                    }
                     
-                    }
-                    a{
-                        text-decoration: none;
-                        color: variables.$color-strong-blue;
-                        font-weight: 400;
-                        font-size: 15px;
-                    }
+                    
                 }
             }  
         }
@@ -149,24 +169,34 @@ header{
         nav{
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
             width: 100%;
-            height: 78px;
-            background-color: variables.$color-strong-blue;
-            padding: 10px 110px 0px 140px;
+            height: 0px;
+            padding: 0px 110px 0px 110px;
             z-index: 4;
             ul{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                top: 40px;
+                border-radius: 0px 0px 7px 7px;
+                background: #dc3545;
+                padding: 0px 30px;
                 li{
                     display: flex;
                     flex-direction: row;
                     .dropdown{
                         .btn-drop{
-                            color: variables.$color-white;
+                            color: variables.$color-strong-blue;
+                            font-family: variables.$font-montserrat;
                         }
                     }
                     a{
-                        color: variables.$color-white;
-                        font-size: 13px;
+                        color: variables.$color-strong-blue;
+                        font-size: 15px;
                         font-weight: 500;
                     }
                 }
@@ -178,19 +208,16 @@ header{
 
         .logo-container{
           display: flex;
-          position: absolute;
-          top: -11px;
-          padding: 0px 140px 0px 140px;
           width: 100px;
           background-color: transparent;
           z-index: 10;
+
             a{
                
                 img{
-                    width: 191px;
+                    width: 150px;
                     position: relative;
                     z-index: 30;
-                    right: 141px;
                     top: 0px;
                 }
             }
@@ -202,28 +229,36 @@ header{
     header{
         .pre-nav-container{
            .pre-nav{
-            padding: 0px 140px 0px 140px;
+            padding: 0px 130px 0px 130px;
            }  
         }
        
         .logo-container{
-            background-color: variables.$color-white;
+            
             a{
                 img{
-                    position: relative;
-                    right: -17px;
-                    top: 0px;
-                    width: 191px;
+                  
+                    
                 }
             }
         } 
         
         nav{
-          
+          display: flex;
+          justify-content: center;
             ul{
+                width: 74%;
+                height: 64px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                border-radius: 0px 0px 7px 7px;
+                background: #dc3545;
+                padding: 0px 30px;
                 li{
                     a{
-                        color: variables.$color-white;
+                        color: variables.$color-strong-blue;
                         font-size: 15px;
                     }
                 }

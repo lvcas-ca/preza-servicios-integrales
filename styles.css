@@ -17,7 +17,7 @@ body {
 header .logo-top-nav-mobile {
   position: relative;
   z-index: 4;
-  background-color: #ffff;
+  background-color: white;
 }
 header .pre-nav-container .pre-nav {
   display: flex;
@@ -38,8 +38,7 @@ header nav {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 300px;
-  background-color: #ffff;
+  background-color: white;
   float: left;
   position: relative;
   padding: 0px 15px 0px 15px;
@@ -67,7 +66,7 @@ header nav ul li .drop-mobile ul li a {
   padding-bottom: 5px;
 }
 header nav ul li a {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -96,10 +95,10 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
     align-items: center;
     gap: 20px;
     width: 100%;
-    height: 50px;
-    background-color: #ffff;
+    height: 140px;
+    background-color: #F4F4F4;
     float: right;
-    padding: 0px 130px 0px 140px;
+    justify-content: space-between;
   }
   header .pre-nav-container .pre-nav .redes {
     display: flex;
@@ -110,7 +109,7 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
   }
   header .pre-nav-container .pre-nav .redes p {
     color: #112847;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0px;
   }
   header .pre-nav-container .pre-nav .redes a img {
@@ -118,75 +117,109 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
   }
   header .pre-nav-container .pre-nav .info {
     display: flex;
-    color: #ffff;
-    font-size: 20px;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    gap: 10px;
   }
-  header .pre-nav-container .pre-nav .info img {
-    height: 22px;
-    width: 32px;
-    padding-right: 10px;
+  header .pre-nav-container .pre-nav .info .img-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  header .pre-nav-container .pre-nav .info .img-container img {
+    height: 25px;
+    width: 25px;
     position: relative;
+    top: 0px;
   }
-  header .pre-nav-container .pre-nav .info a {
+  header .pre-nav-container .pre-nav .info .text-container-info {
+    display: flex;
+    flex-direction: column;
+  }
+  header .pre-nav-container .pre-nav .info .text-container-info span {
+    color: #74787C;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 121.429% */
+  }
+  header .pre-nav-container .pre-nav .info .text-container-info a {
     text-decoration: none;
     color: #112847;
     font-weight: 400;
     font-size: 15px;
+    font-family: "Exo";
   }
   header nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
-    height: 78px;
-    background-color: #112847;
-    padding: 10px 110px 0px 140px;
+    height: 0px;
+    padding: 0px 110px 0px 110px;
     z-index: 4;
+  }
+  header nav ul {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    border-radius: 0px 0px 7px 7px;
+    background: #dc3545;
+    padding: 0px 30px;
   }
   header nav ul li {
     display: flex;
     flex-direction: row;
   }
   header nav ul li .dropdown .btn-drop {
-    color: #ffff;
+    color: #112847;
+    font-family: "Exo";
   }
   header nav ul li a {
-    color: #ffff;
-    font-size: 13px;
+    color: #112847;
+    font-size: 15px;
     font-weight: 500;
   }
   header .logo-container {
     display: flex;
-    position: absolute;
-    top: -11px;
-    padding: 0px 140px 0px 140px;
     width: 100px;
     background-color: transparent;
     z-index: 10;
   }
   header .logo-container a img {
-    width: 191px;
+    width: 150px;
     position: relative;
     z-index: 30;
-    right: 141px;
     top: 0px;
   }
 }
 @media (min-width: 1130px) {
   header .pre-nav-container .pre-nav {
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
   }
-  header .logo-container {
-    background-color: #ffff;
+  header nav {
+    display: flex;
+    justify-content: center;
   }
-  header .logo-container a img {
+  header nav ul {
+    width: 74%;
+    height: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
-    right: -17px;
-    top: 0px;
-    width: 191px;
+    border-radius: 0px 0px 7px 7px;
+    background: #dc3545;
+    padding: 0px 30px;
   }
   header nav ul li a {
-    color: #ffff;
+    color: #112847;
     font-size: 15px;
   }
 }
@@ -199,6 +232,7 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
   position: relative;
   z-index: 2;
   top: 69px;
+  background-color: black;
 }
 .hero-container .flex-container {
   width: 100%;
@@ -249,18 +283,18 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
   border: none;
 }
 .hero-container .flex-container .flex-1 .btn-consulta:hover {
-  background-color: #11284798 !important;
+  background-color: rgba(17, 40, 71, 0.5960784314) !important;
 }
 .hero-container .flex-container .flex-1 .btn-consulta a {
   text-decoration: none;
-  color: #ffff;
+  color: white;
 }
 .hero-container .flex-container .container {
   width: 250px;
   height: 150px;
   position: absolute;
   border-radius: 4px;
-  color: #ffff;
+  color: white;
 }
 .hero-container .flex-container .container .box {
   position: relative;
@@ -304,7 +338,7 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
     height: 120vh;
     background-size: cover;
     background-image: url("../img-web/backgroud-blue-layer.png");
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
     position: relative;
     z-index: 2;
     top: 127px;
@@ -326,7 +360,7 @@ header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inne
     height: 150px;
     position: absolute;
     border-radius: 4px;
-    color: #ffff;
+    color: white;
   }
   .hero-container .flex-container .container .box {
     position: relative;
@@ -406,7 +440,7 @@ main {
   margin: 0px 15px 0px 15px;
 }
 .card-servicios-container p {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -415,7 +449,7 @@ main {
   color: #25589A;
 }
 .card-servicios-container h1 {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -438,7 +472,7 @@ main {
   padding: 20px 15px 20px 15px;
 }
 .card-servicios-container .cards-container .card span {
-  color: #ffff;
+  color: white;
   font-size: 15px;
   font-weight: 700;
   text-align: center;
@@ -450,7 +484,7 @@ main {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: #ffff;
+  color: white;
   padding-top: 15px;
 }
 .card-servicios-container .cards-container .card button {
@@ -484,12 +518,12 @@ main {
   flex-direction: column;
 }
 .emergencias-container .barra-separadora-container p {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .barra-separadora-container h1 {
   font-family: "Montserrat";
@@ -500,7 +534,7 @@ main {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .card-emergencia-container {
   width: 100%;
@@ -531,7 +565,7 @@ main {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .card-emergencia-container .card-roja .llamar-container {
   display: flex;
@@ -558,7 +592,7 @@ main {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .card-emergencia-container .card-roja .llamar-container .llamar a img {
   display: none;
@@ -617,7 +651,7 @@ main {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .card-emergencia-container .card-roja .llamar-container .ws a img {
   display: none;
@@ -644,7 +678,7 @@ main {
   /* identical to box height */
   display: flex;
   align-items: center;
-  color: #ffff;
+  color: white;
 }
 .emergencias-container .card-emergencia-container .card-con-imagen ul li img {
   padding-right: 10px;
@@ -682,19 +716,19 @@ main {
   padding: 150px 20px 150px 20px;
   width: 100%;
   height: 550px;
-  background-color: #112847e1;
+  background-color: rgba(17, 40, 71, 0.8823529412);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 .quienes-somos-container p {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #ffff;
+  color: white;
 }
 .quienes-somos-container h1 {
   font-family: "Montserrat";
@@ -705,7 +739,7 @@ main {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffff;
+  color: white;
 }
 .quienes-somos-container .texto-ofrecemos {
   padding: 0px 15px 0px 15px;
@@ -727,12 +761,12 @@ main {
   gap: 10px;
 }
 .contacto-container .barra-separadora-container-azul p {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #ffff;
+  color: white;
 }
 .contacto-container .barra-separadora-container-azul span {
   font-family: "Montserrat";
@@ -741,7 +775,7 @@ main {
   font-size: 20px;
   line-height: 20px;
   text-align: left;
-  color: #ffff;
+  color: white;
 }
 .contacto-container .formulario-container {
   background: url("/img-web/mapa-1.PNG");
@@ -781,9 +815,9 @@ main {
   background-size: auto;
 }
 .testimonios-container h1 {
-  color: #ffff;
+  color: white;
   padding: 20px;
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-weight: bold;
 }
 .testimonios-container .cards {
@@ -793,7 +827,7 @@ main {
   gap: 10px;
 }
 .testimonios-container .cards .swiper-sliden {
-  background-color: #ffff;
+  background-color: white;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -810,7 +844,7 @@ main {
 }
 .testimonios-container .cards .swiper-sliden p {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Exo";
 }
 .testimonios-container .cards .swiper-sliden .text-final-card {
   display: flex;
@@ -825,11 +859,11 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #ffff;
+  color: white;
   padding: 0px 15px 0px 15px;
 }
 .gracias-container h1 {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 800;
   font-size: 44px;
@@ -838,7 +872,7 @@ main {
   color: #FFFFFF;
 }
 .gracias-container p {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -852,11 +886,9 @@ main {
   .emergencias-container .card-emergencia-container .card-roja .llamar-container .pulse {
     margin-left: -2px;
   }
-
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .emergencias-container .card-emergencia-container .card-roja .llamar-container {
     width: 500px;
   }
@@ -887,7 +919,7 @@ main {
     top: -40px;
     width: 600px;
     padding: 15px;
-    background-color: #ffff;
+    background-color: white;
     color: #000000;
     padding-top: 25px;
     -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
@@ -898,7 +930,6 @@ main {
   main {
     padding-top: 300px;
   }
-
   .card-servicios-container h1 {
     font-size: 32px;
   }
@@ -906,11 +937,9 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-
   .card:nth-child(5) {
     grid-column-start: 2;
   }
-
   .emergencias-container .barra-separadora-container h1 {
     font-size: 32px;
   }
@@ -946,16 +975,14 @@ main {
   .emergencias-container .card-emergencia-container .card-con-imagen button {
     margin-top: 15px;
   }
-
   .quienes-somos-container .barra-separadora-container-azul {
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
   }
   .quienes-somos-container .barra-separadora-container-azul p {
     width: 800px;
   }
-
   .contacto-container .barra-separadora-container-azul {
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
   }
   .contacto-container .formulario-container {
     background-size: cover;
@@ -973,7 +1000,6 @@ main {
     padding: 10px;
     margin-bottom: 20px;
   }
-
   .gracias-container h1 {
     font-size: 50px;
     padding-bottom: 20px;
@@ -984,7 +1010,7 @@ main {
   }
 }
 footer {
-  background-color: #ffff;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1007,7 +1033,7 @@ footer .menu-footer-container ul li {
 }
 footer .menu-footer-container ul li a {
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -1122,7 +1148,7 @@ footer .redes-container a img {
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-  color: #ffff !important;
+  color: white !important;
   background-color: #25589A !important;
 }
 
@@ -1163,7 +1189,7 @@ footer .redes-container a img {
 }
 .servicio-hero-container h1 {
   font-weight: bold;
-  color: #ffff;
+  color: white;
   position: relative;
   top: -110px;
   font-size: 36px;
@@ -1173,12 +1199,12 @@ footer .redes-container a img {
   padding-left: 0px;
 }
 .servicio-hero-container ul li a {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #ffff;
+  color: white;
   position: relative;
   top: -110px;
 }
@@ -1198,7 +1224,7 @@ footer .redes-container a img {
   width: 100%;
 }
 .text-card-img-container .text-container-service h4 {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1213,7 +1239,7 @@ footer .redes-container a img {
   flex-direction: column;
 }
 .text-card-img-container .text-container-service .confiable span {
-  font-family: "Montserrat";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -1423,9 +1449,8 @@ footer .redes-container a img {
 
 @media (min-width: 600px) {
   .servicio-hero-container {
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
   }
-
   .h1-plom {
     font-size: 56px !important;
   }
@@ -1439,37 +1464,29 @@ footer .redes-container a img {
   .banner-container img {
     width: 80%;
   }
-
   .banner-container-mobile {
     display: none;
   }
-
   .logo-top-nav-mobile {
     display: none;
   }
-
   .menu-off {
     transform: translate(0px);
   }
-
   .enlace-trabaja {
     min-width: 190px;
   }
-
   .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
   }
-
   .dropdown-menu {
     position: relative;
     z-index: 999999;
   }
-
   .hamburger {
     display: none !important;
   }
-
   .testimonios-container {
     background-size: cover;
   }
@@ -1491,7 +1508,6 @@ footer .redes-container a img {
     position: relative;
     top: -10px;
   }
-
   @-webkit-keyframes txt-desk {
     0%, 10% {
       transform: translateY(0);
@@ -1654,15 +1670,14 @@ footer .redes-container a img {
     right: 19px;
     top: 9px;
   }
-
   .servicio-hero-container {
     top: 128px;
-    padding: 0px 140px 0px 140px;
+    padding: 0px 130px 0px 130px;
     position: relative;
   }
   .servicio-hero-container h1 {
     font-weight: bold;
-    color: #ffff;
+    color: white;
     position: relative;
     top: -110px;
     font-size: 56px;
@@ -1672,20 +1687,19 @@ footer .redes-container a img {
     padding-left: 0px;
   }
   .servicio-hero-container ul li a {
-    font-family: "Montserrat";
+    font-family: "Exo";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-    color: #ffff;
+    color: white;
     position: relative;
     top: -110px;
   }
-
   .text-card-img-container {
     top: 150px;
     flex-direction: row;
-    margin: 0px 140px 0px 140px;
+    margin: 0px 130px 0px 130px;
     justify-content: space-evenly;
     padding-top: 50px;
   }
@@ -1717,7 +1731,6 @@ footer .redes-container a img {
     height: 525px;
     border-radius: 5px;
   }
-
   .boton-enviar {
     position: relative;
     top: 17px;
